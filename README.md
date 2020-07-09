@@ -1,0 +1,10 @@
+# torque_stuff
+Various movies of torque balances, angular momentum, differential rotation and meridional circulation. Covers a variety of Rayleigh runs, with and without coupled CZ-RZ layers and with and without forced tachoclines. 
+
+"CZ_only" refers to cases with only one (neutrally stable) layer. "tach" refers to cases where the neutrally stable layer overlies a stable layer below (maybe a misnomer since it doesn't necessarily imply the presence of a tachocline in the differential rotation). All the models either have a forcing function (located at 4.8 x 10^10 cm, a bit below the CZ), labeled "forced4.80" or have no such forcing term ("noforce"). "constdiff" in the CZ_only cases means the simulation has spatially constant diffusions. If that label isn't there, the simulations have diffusions varying like rho^(-1/2). All cases rotate at 3x solar. All Prandtl numbers are 1, and the number after "nk" refers to the value of the diffusion (in units of 10^12 cm^2/s) at the top of the CZ. 
+
+For the meridional-plane plots/movies: if there is a dashed line in the RZ in the "tach_nk?_forced" cases, that is the location of the centroid of the forcing function. There is always a solid line at r_bcz = 5 x 10^10 cm at the base of the CZ. If there are two colorbars beneath a subplot, the upper colorbar is for the CZ and the lower colorbar is for the RZ. Hopefully the titles above each subplot are fairly self-explanatory. 
+
+The moll/ subdirectory contains Mollweide figures of what the flows look like near the base of the CZ at the beginning and end of the simulations for various cases. These show the "W-shaped" cells, banana cells, and some crazy stuff for the low diffusion cases near the end. 
+
+For each simulation considered, there should be movies of (1) the DR, angular momentum, and MC side by side and (2) the torque balance. There should also be an "etrace" .png plot that maps the growth of the KE (mostly KE of the DR) over time, to quantitatively see how far along each movie has gotten to equilibrium. 
